@@ -16,17 +16,46 @@ body {
   padding: 10px;
 }
 .classe1 button {
-  background-color: #0f0;
+  position: relative;
+  background-color: transparent;
+  width: 250px;
+  height: 60px;
+  font-size: 1rem;
+  font-family: sans-serif;
   color: white;
   cursor: pointer;
-  border: none;
+  border: 1px solid black;
   transition: 0.5s;
-  margin-top: 2rem;
-  margin-left: 5rem;
-  padding: 1rem;
+  margin-top: 15rem;
+  margin-left: 25rem;
+  text-transform: uppercase;
 }
 .classe1 button:hover {
   transform: scale(1.1);
+  letter-spacing: 0.3rem;
+}
+.classe1 button::before, .classe1 button::after {
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 10px;
+  border: 1px solid;
+  transition: all 500ms;
+}
+.classe1 button::after {
+  bottom: -6px;
+  left: 80%;
+}
+.classe1 button::before {
+  transition: 1s;
+  top: -6px;
+  left: 20%;
+}
+.classe1 button:hover::after {
+  left: 20%;
+}
+.classe1 button:hover::before {
+  left: 80%;
 }
 
 /*# sourceMappingURL=style.css.map */

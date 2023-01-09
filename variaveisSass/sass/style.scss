@@ -1,11 +1,12 @@
-$btn-color: #ff4843;
+$btn-color: #E35;
+$widtih-btn: 75px;
 
 .btn1 {
-    width: 60px;
+    width: $widtih-btn;
     background-color: $btn-color;
 }
 
 .btn2 {
-    width: 70px;
+    width: $widtih-btn;
     background-color: $btn-color;
 }

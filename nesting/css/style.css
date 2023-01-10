@@ -47,7 +47,6 @@ body {
   left: 80%;
 }
 .classe1 button::before {
-  transition: 1s;
   top: -6px;
   left: 20%;
 }
